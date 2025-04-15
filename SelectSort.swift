@@ -64,12 +64,12 @@ do {
         input.closeFile()
 
         // Sort the array
-        let sorted = selectionSort(unsortedArray: unsortedArray)
+        let sortedArray = selectionSort(unsortedArray: unsortedArray)
 
         // Add to the output line
         outputStr += "Sorted array: "
         // Loop through the sorted array and add to output string
-        for num in sorted {
+        for num in sortedArray {
             // Add each number to the output string
             outputStr += "\(num) "
         }
@@ -91,27 +91,27 @@ do {
 // Function to perform selection sort
 func selectionSort(unsortedArray: [Int]) -> [Int] {
     // Set array to the unsorted array
-    var SortedArray = unsortedArray
+    var sortedArray = unsortedArray
 
     // For each index in the array
-    for currentIndex in 0..<SortedArray.count - 1 {
+    for currentIndex in 0..<sortedArray.count - 1 {
         // Create minIndex variable and set it to the current index
         var minIndex = currentIndex
         // For each index after the current index
-        for comparisonIndex in currentIndex+1..<SortedArray.count {
+        for comparisonIndex in currentIndex+1..<sortedArray.count {
             // Compare the current index with the comparison index
-            if SortedArray[comparisonIndex] < SortedArray[minIndex] {
+            if sortedArray[comparisonIndex] < sortedArray[minIndex] {
                 // If the comparison index is less than the current index,
                 minIndex = comparisonIndex
             }
         }
 
         // Swap elements
-        let temp = SortedArray[currentIndex]
-        SortedArray[currentIndex] = SortedArray[minIndex]
-        SortedArray[minIndex] = temp
+        let temp = sortedArray[currentIndex]
+        sortedArray[currentIndex] = sortedArray[minIndex]
+        sortedArray[minIndex] = temp
     }
 
     // Return the sorted array
-    return SortedArray
+    return sortedArray
 }
