@@ -1,0 +1,5 @@
+Sorted array: 10 14 23 35 41 59 68 76 87 92 
+Sorted array: 3 19 27 38 44 56 65 73 81 99 
+Sorted array: 7 11 25 31 46 62 69 84 88 93 
+Sorted array: 5 12 20 33 40 58 70 77 91 96 
+Sorted array: 6 18 28 36 47 53 60 66 80 85 
